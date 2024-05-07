@@ -1,0 +1,33 @@
+:ClrHome
+:Disp "SPEED
+:Disp "1) SLOW
+:Disp "2) NORMAL
+:Disp "3) FAST
+:DelVar Z8→X
+:Repeat 2>abs(Ans-2
+:getKey-91→S
+:End
+:ClrHome
+:Disp "SCORE:
+:Repeat K=45 or max(X=L1
+:Output(8,1,"    // 16 spaces
+:2→F
+:seq(3I-int(3rand),I,1,5→L1
+:Repeat K=45 or F=8
+:getKey→K
+:min(15,max(2,X-(Ans=24)+(Ans=26→X
+:Output(8,Ans-1," O // 1 space
+:Output(F,1,"    // 16 spaces
+:F+1→F
+:For(I,1,5
+:Output(Ans,L1(I),"V
+:End
+:Z+S→Z
+:Output(1,7,Ans
+:rand(4-S
+:End
+:End
+:DelVar L1ClrHome
+:Disp "YOUR SCORE:
+:Pause Z
+:ClrHome:"
